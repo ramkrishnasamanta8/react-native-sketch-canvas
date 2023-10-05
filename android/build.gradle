@@ -5,12 +5,12 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 27)
-    buildToolsVersion safeExtGet('buildToolsVersion', '27.0.3')
+    compileSdkVersion safeExtGet('compileSdkVersion', 30)
+    buildToolsVersion safeExtGet('buildToolsVersion', '30.0.3')
 
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 16)
-        targetSdkVersion safeExtGet('targetSdkVersion', 27)
+        minSdkVersion safeExtGet('minSdkVersion', 19)
+        targetSdkVersion safeExtGet('targetSdkVersion', 30)
         versionCode 1
         versionName "1.0"
         ndk {
@@ -28,5 +28,5 @@ android {
 }
 
 dependencies {
-    provided "com.facebook.react:react-native:+"
+    implementation "com.facebook.react:react-native:+"
 }
